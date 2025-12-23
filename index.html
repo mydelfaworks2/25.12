@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tolya</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .wrapper {}
+
+        body {
+            background: url('bg.jpg') no-repeat center/cover;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .prediction-block {
+            background-color: #00000050;
+            padding: 30px;
+            box-shadow: 10px 10px 20px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .prediction-block__btn {
+            padding: 10px;
+            background-color: #357b35;
+            color: white;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .prediction-block-res {}
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="prediction-block">
+                <h1>предсказане на 2026год</h1>
+                <button class="prediction-block__btn" id="predictionBtn">плучить пресказание</button>
+                <div class="prediction-block-res" id="predictionRes"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js" type="module"></script>
+</body>
+
+</html>
