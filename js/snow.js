@@ -5,7 +5,7 @@ function createSnowflake() {
     // Добавляем класс для стилей
     snowflake.classList.add("snowflake");
     // Указываем путь к картинке снежинки
-    snowflake.src = "../snowflake.png";
+    snowflake.src = "snowflake.png";
 
     // Настройка альтернативного текста (для доступности)
     snowflake.alt = "Снежинка";
@@ -52,4 +52,5 @@ setInterval(createSnowflake, 150);
 for (let i = 0; i < 20; i++) {
     // Создаем с задержкой, чтобы они появлялись не все сразу
     setTimeout(() => createSnowflake(), i * 100);
+
 }
